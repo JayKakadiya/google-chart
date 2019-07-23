@@ -131,19 +131,24 @@ var loaderPromise = new Promise(function(resolve, reject) {
   } else {
     // Try to find existing loader script.
     var loaderScript = document.querySelector(
-        'script[src="https://www.gstatic.com/charts/loader.js"]');
+        // 'script[src="https://www.gstatic.com/charts/loader.js"]');
+        'script[src="/node_modules/google-chart/loader.js"]');
+        
     if (!loaderScript) {
       // If the loader is not present, add it.
       loaderScript =
           /** @type {!HTMLScriptElement} */ (document.createElement('script'));
       // Specify URL directly to pass JS compiler conformance checks.
-      loaderScript.src = 'https://www.gstatic.com/charts/loader.js';
+    //   loaderScript.src = 'https://www.gstatic.com/charts/loader.js';
+      loaderScript.src = '/node_modules/google-chart/loader.js';
+      
       document.head.appendChild(loaderScript);
     }
     loaderScript.addEventListener('load', resolve);
     loaderScript.addEventListener('error', reject);
   }
 });
+
 /** @type {!Object<string, boolean>} set-like object of gviz packages to load */
 var packagesToLoad = {};
 /** @type {!Object<string, !Promise>} promises for the various packages */
