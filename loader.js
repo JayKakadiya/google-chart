@@ -6509,7 +6509,7 @@
     google.v.w.L.cn = function(b) {
         var c = google.v.w.L.ln(b),
             // d = H.c.M.from("https://www.gstatic.com/charts/%{version}/loader.js");
-            d = H.c.M.from("/node_modules/google-chart/46.2/loader.js");
+            d = H.c.M.from("/node_modules/@google-web-components/google-chart/46.2/loader.js");
         return google.v.w.Xa.load(d, {
             version: c.dn
         }).then(function() {
