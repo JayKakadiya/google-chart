@@ -11,7 +11,7 @@
         x = "function",
         y = "hasOwnProperty",
         // z = "https://www.gstatic.com/charts/%{version}/third_party/%{subdir}/%{filename}",
-        z = "/node_modules/google-chart/46.2/third_party/%{subdir}/%{filename}",        
+        z = "/node_modules/@google-web-components/google-chart/46.2/third_party/%{subdir}/%{filename}",        
         A = "imagechart",
         B = "number",
         C = "object",
@@ -5035,14 +5035,14 @@
             // }
 
             gstatic: {
-                debug: S.f.H.from("/node_modules/google-chart/46.2/js/jsapi_debug_%{package}_module.js"),
-                debug_i18n: S.f.H.from("/node_modules/google-chart/46.2/i18n/jsapi_debug_i18n_%{package}_module__%{language}.js"),
-                compiled: S.f.H.from("/node_modules/google-chart/46.2/js/jsapi_compiled_%{package}_module.js"),
-                compiled_i18n: S.f.H.from("/node_modules/google-chart/46.2/i18n/jsapi_compiled_i18n_%{package}_module__%{language}.js"),
-                css: S.f.H.from("/node_modules/google-chart/46.2/css/%{subdir}/%{filename}"),
-                css2: S.f.H.from("/node_modules/google-chart/46.2/css/%{subdir1}/%{subdir2}/%{filename}"),
+                debug: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/js/jsapi_debug_%{package}_module.js"),
+                debug_i18n: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/i18n/jsapi_debug_i18n_%{package}_module__%{language}.js"),
+                compiled: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/js/jsapi_compiled_%{package}_module.js"),
+                compiled_i18n: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/i18n/jsapi_compiled_i18n_%{package}_module__%{language}.js"),
+                css: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/css/%{subdir}/%{filename}"),
+                css2: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/css/%{subdir1}/%{subdir2}/%{filename}"),
                 third_party: S.f.H.from(z),
-                third_party2: S.f.H.from("/node_modules/google-chart/46.2/third_party/%{subdir1}/%{subdir2}/%{filename}"),
+                third_party2: S.f.H.from("/node_modules/@google-web-components/google-chart/46.2/third_party/%{subdir1}/%{subdir2}/%{filename}"),
                 third_party_gen: S.f.H.from(z)
             }
         },
