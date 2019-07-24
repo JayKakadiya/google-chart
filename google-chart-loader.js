@@ -132,7 +132,7 @@ var loaderPromise = new Promise(function(resolve, reject) {
     // Try to find existing loader script.
     var loaderScript = document.querySelector(
         // 'script[src="https://www.gstatic.com/charts/loader.js"]');
-        'script[src="/node_modules/google-chart/loader.js"]');
+        'script[src="/node_modules/@google-web-components/google-chart/loader.js"]');
         
     if (!loaderScript) {
       // If the loader is not present, add it.
@@ -140,7 +140,7 @@ var loaderPromise = new Promise(function(resolve, reject) {
           /** @type {!HTMLScriptElement} */ (document.createElement('script'));
       // Specify URL directly to pass JS compiler conformance checks.
     //   loaderScript.src = 'https://www.gstatic.com/charts/loader.js';
-      loaderScript.src = '/node_modules/google-chart/loader.js';
+      loaderScript.src = '/node_modules/@google-web-components/google-chart/loader.js';
       
       document.head.appendChild(loaderScript);
     }
