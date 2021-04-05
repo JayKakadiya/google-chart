@@ -1,1 +1,5 @@
 node_modules
+
+**/*.d.ts*
+!test/wct.d.ts
+**/*.js*
