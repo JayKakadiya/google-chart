@@ -29,13 +29,13 @@ const loaderPromise = new Promise((resolve, reject) => {
     else {
         // Try to find existing loader script.
         //let loaderScript = document.querySelector('script[src="https://www.gstatic.com/charts/loader.js"]');
-        let loaderScript = document.querySelector('script[src="../node_modules/@google-web-components/google-chart/charts/loader.js"]');
+        let loaderScript = document.querySelector('script[src="../node_modules/@google-web-components/google-chart/loader_main.js"]');
         if (!loaderScript) {
             // If the loader is not present, add it.
             loaderScript = document.createElement('script');
             // Specify URL directly to pass JS compiler conformance checks.
             //loaderScript.src = 'https://www.gstatic.com/charts/loader.js';
-            loaderScript.src = '../node_modules/@google-web-components/google-chart/charts/loader.js';
+            loaderScript.src = '../node_modules/@google-web-components/google-chart/loader_main.js';
             document.head.appendChild(loaderScript);
         }
         loaderScript.addEventListener('load', resolve);
